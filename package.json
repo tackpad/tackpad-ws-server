@@ -1,0 +1,18 @@
+{
+  "name": "tackpad-ws-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@y/protocols": "1.0.6-0",
+    "lib0": "^0.2.114",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.52.0",
+    "yjs": "^13.6.27"
+  }
+}

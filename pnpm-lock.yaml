@@ -1,0 +1,65 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@y/protocols':
+        specifier: 1.0.6-0
+        version: 1.0.6-0(yjs@13.6.27)
+      lib0:
+        specifier: ^0.2.114
+        version: 0.2.114
+      uWebSockets.js:
+        specifier: github:uNetworking/uWebSockets.js#v20.52.0
+        version: https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/cfc9a40d8132a34881813cec3d5f8e3a185b3ce3
+      yjs:
+        specifier: ^13.6.27
+        version: 13.6.27
+
+packages:
+
+  '@y/protocols@1.0.6-0':
+    resolution: {integrity: sha512-vT/b1ck7gkMm/HPu4PdqxQ4yx1gy6Brvf6vC5mBVIqu0Ls+SBXUHEjH4mhzCh+xRWFKRRuJ26zYicgL97p5DJg==}
+    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
+    peerDependencies:
+      yjs: 14.0.0-* || ^14
+
+  isomorphic.js@0.2.5:
+    resolution: {integrity: sha512-PIeMbHqMt4DnUP3MA/Flc0HElYjMXArsw1qwJZcm9sqR8mq3l8NYizFMty0pWwE/tzIGH3EKK5+jes5mAr85yw==}
+
+  lib0@0.2.114:
+    resolution: {integrity: sha512-gcxmNFzA4hv8UYi8j43uPlQ7CGcyMJ2KQb5kZASw6SnAKAf10hK12i2fjrS3Cl/ugZa5Ui6WwIu1/6MIXiHttQ==}
+    engines: {node: '>=16'}
+    hasBin: true
+
+  uWebSockets.js@https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/cfc9a40d8132a34881813cec3d5f8e3a185b3ce3:
+    resolution: {tarball: https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/cfc9a40d8132a34881813cec3d5f8e3a185b3ce3}
+    version: 20.52.0
+
+  yjs@13.6.27:
+    resolution: {integrity: sha512-OIDwaflOaq4wC6YlPBy2L6ceKeKuF7DeTxx+jPzv1FHn9tCZ0ZwSRnUBxD05E3yed46fv/FWJbvR+Ud7x0L7zw==}
+    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
+
+snapshots:
+
+  '@y/protocols@1.0.6-0(yjs@13.6.27)':
+    dependencies:
+      lib0: 0.2.114
+      yjs: 13.6.27
+
+  isomorphic.js@0.2.5: {}
+
+  lib0@0.2.114:
+    dependencies:
+      isomorphic.js: 0.2.5
+
+  uWebSockets.js@https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/cfc9a40d8132a34881813cec3d5f8e3a185b3ce3: {}
+
+  yjs@13.6.27:
+    dependencies:
+      lib0: 0.2.114
